@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- White square background with 8px rounded corners -->
+  <rect x="0" y="0" width="512" height="512" rx="8" ry="8" fill="#FFFFFF"/>
+
+  <!-- Shield -->
+  <path fill="#174D3B" d="
+    M256 58
+    L433 185
+    L433 304
+    C433 394 375 444 256 477
+    C137 444 79 394 79 304
+    L79 185
+    Z"/>
+
+  <!-- Gold chevron -->
+  <path fill="#D99624" d="
+    M150 190
+    L256 113
+    L362 190
+    L362 229
+    L256 153
+    L150 229
+    Z"/>
+
+  <!-- White W -->
+  <path fill="#FFFFFF" d="
+    M150 271
+    L190 271
+    L224 368
+    L256 305
+    L288 368
+    L322 271
+    L362 271
+    L311 408
+    L274 408
+    L256 371
+    L238 408
+    L201 408
+    Z"/>
+</svg>

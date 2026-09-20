@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accessibility | Wiser Property Solutions</title>
+    <meta
+      name="description"
+      content="Our accessibility target for this website, what we have done to meet it, the limitations we know about, and how to tell us if something does not work for you."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="icon" href="/assets/img/logo_favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container">
+        <a class="logo" href="/" aria-label="Wiser Property Solutions home">
+          <img src="/assets/img/logo.svg" alt="Wiser Property Solutions" />
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <ul>
+            <li><a class="top-link" href="/">Home</a></li>
+            <li class="has-dropdown">
+              <a class="top-link" href="/services/">Services</a>
+              <div class="dropdown-panel">
+                <div class="dropdown-panel-inner">
+                  <a href="/services/reo-sfr-hud-foreclosure/"
+                    >REO / SFR / HUD / Foreclosure</a
+                  >
+                  <a href="/services/property-inspections/"
+                    >Property Inspections</a
+                  >
+                  <a href="/services/rehabilitation-and-restoration/"
+                    >Rehabilitation and Restoration</a
+                  >
+                  <a href="/services/environmental-hazard-removal/"
+                    >Environmental Hazard Removal</a
+                  >
+                  <a href="/services/trash-removal/">Trash Removal</a>
+                  <a href="/services/general-property-repairs/"
+                    >General Property Repairs</a
+                  >
+                  <a href="/services/lawn-and-exterior-maintenance/"
+                    >Lawn and Exterior Maintenance</a
+                  >
+                  <a href="/services/roofing-services/">Roofing Services</a>
+                  <a href="/services/winterization-services/"
+                    >Winterization Services</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="top-link" href="/vendor-sign-up/">Vendor Sign Up</a>
+            </li>
+            <li><a class="top-link" href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-label="Toggle menu"
+        >
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+          <a href="/">Home</a><span class="sep">/</span
+          ><span class="current">Accessibility</span>
+        </div>
+      </nav>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Accessibility</h1>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="legal-copy">
+            <p>
+              This site is built to meet WCAG 2.1 Level AA. Here is what that
+              means in practice, what we know is not perfect, and how to tell us
+              when something does not work.
+            </p>
+            <h2>Our target</h2>
+            <p>
+              Web Content Accessibility Guidelines 2.1, Level AA. That is the
+              standard this site was designed and built against, and it is
+              checked rather than assumed.
+            </p>
+            <h2>What that means here</h2>
+            <ul>
+              <li>
+                Every page works with a keyboard alone, in a sensible order,
+                with a visible focus ring on everything you can reach.
+              </li>
+              <li>
+                Text meets or exceeds the contrast ratios the standard requires,
+                measured rather than estimated.
+              </li>
+              <li>
+                Colour is never the only way meaning is carried. Every status
+                also carries a text label.
+              </li>
+              <li>
+                Every page has one main heading and a correct heading order,
+                real landmarks, and a skip link to the main content.
+              </li>
+              <li>
+                Form fields have real labels, and errors explain what to do
+                rather than saying that something is invalid.
+              </li>
+              <li>
+                Every image has alternative text describing what is in the
+                frame, and decorative images are hidden from screen readers.
+              </li>
+              <li>
+                If your system asks for reduced motion, all transitions and
+                movement are switched off.
+              </li>
+              <li>
+                The site is readable and usable with JavaScript turned off,
+                apart from the contact form, which still shows the phone number.
+              </li>
+            </ul>
+            <h2>Known limitations</h2>
+            <p>None</p>
+            <p>We would rather name these than pretend they are not there.</p>
+            <ul>
+              <li>
+                The seasonal calendar on the homepage is a wide grid. It scrolls
+                sideways within its own container on a narrow screen, and the
+                information in it is also written out in text for screen
+                readers, but the visual grid itself is difficult to read at very
+                small sizes.
+              </li>
+              <li>
+                Photographs on the site are currently placeholders. When real
+                photographs replace them, their alternative text will be written
+                individually, and we may not catch every one immediately.
+              </li>
+              <li>
+                Condition report samples are dense tables of data. They are
+                marked up as description lists and read correctly, but they take
+                longer to listen to than they do to look at.
+              </li>
+            </ul>
+            <h2>Tell us if something does not work</h2>
+            <p>
+              If any part of this site is difficult or impossible for you to
+              use, use the form on the contact page to tell us what happened and
+              what you were trying to do. We will fix it, and in the meantime we
+              will give you the information you were after in whatever format
+              suits you.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a class="logo" href="/" aria-label="Wiser Property Solutions home">
+              <img
+                src="/assets/img/logo-reversed.svg"
+                alt="Wiser Property Solutions"
+              />
+            </a>
+            <p class="tagline">
+              Where professionalism meets proven performance.
+            </p>
+            <address>1324 Journal Avenue<br />Elmont, NY 11003</address>
+            <p>Residential properties across the United States.</p>
+            <p class="hours">
+              Monday to Saturday, 7am to 6pm Eastern. Emergency securing and
+              storm response outside those hours.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>Our services</h3>
+            <ul>
+              <li>
+                <a href="/services/reo-sfr-hud-foreclosure/"
+                  >REO / SFR / HUD / Foreclosure</a
+                >
+              </li>
+              <li>
+                <a href="/services/property-inspections/"
+                  >Property Inspections</a
+                >
+              </li>
+              <li>
+                <a href="/services/rehabilitation-and-restoration/"
+                  >Rehabilitation and Restoration</a
+                >
+              </li>
+              <li>
+                <a href="/services/environmental-hazard-removal/"
+                  >Environmental Hazard Removal</a
+                >
+              </li>
+              <li><a href="/services/trash-removal/">Trash Removal</a></li>
+              <li>
+                <a href="/services/general-property-repairs/"
+                  >General Property Repairs</a
+                >
+              </li>
+              <li>
+                <a href="/services/lawn-and-exterior-maintenance/"
+                  >Lawn and Exterior Maintenance</a
+                >
+              </li>
+              <li>
+                <a href="/services/roofing-services/">Roofing Services</a>
+              </li>
+              <li>
+                <a href="/services/winterization-services/"
+                  >Winterization Services</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Useful links</h3>
+            <ul>
+              <li><a href="/about/">About us</a></li>
+              <li><a href="/services/">Our services</a></li>
+              <li><a href="/vendor-sign-up/">Apply as vendor</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-about">
+            <h3>About us</h3>
+            <p>
+              Wiser Property Solutions protects and maintains homes nationwide:
+              single family, multi family, REO and occupied. We keep every
+              property safe, compliant and market ready, with care you can count
+              on.
+            </p>
+            <a class="more" href="/about/">More about us</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Wiser Property Solutions LLC. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="/privacy/">Privacy</a>
+            <a href="/terms/">Terms</a>
+            <a href="/accessibility/">Accessibility</a>
+          </div>
+        </div>
+        <p class="footer-disclaimer">
+          Wiser Property Solutions LLC is a property preservation and field
+          services company. We are not a law firm, a mortgage servicer or a
+          government agency, and nothing on this site is legal advice. HUD and
+          investor guidelines change. Confirm current requirements with the
+          issuing authority.
+        </p>
+      </div>
+    </footer>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
