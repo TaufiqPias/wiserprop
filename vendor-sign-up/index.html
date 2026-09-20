@@ -111,6 +111,9 @@
         <div class="container">
           <form
             id="vendorForm"
+            action="https://script.google.com/macros/s/AKfycbx8O3Pf08iGdehoiIZTAtzGrLtctYE6ZQBuh0_nfBL4gGdeQaaSA0oGUknJeZwTvz3M8Q/exec"
+            method="POST"
+            target="hidden_iframe"
             data-local-form
             data-success-message="Thanks - your application has been received."
             novalidate
@@ -452,5 +455,10 @@
       </div>
     </footer>
     <script src="../assets/js/main.js"></script>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+    ></iframe>
   </body>
 </html>
