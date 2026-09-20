@@ -20,7 +20,11 @@
    * with no JS needed. This block only closes the mobile menu on Escape.
    */
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && mainNav && mainNav.classList.contains("is-open")) {
+    if (
+      e.key === "Escape" &&
+      mainNav &&
+      mainNav.classList.contains("is-open")
+    ) {
       mainNav.classList.remove("is-open");
       if (navToggle) {
         navToggle.classList.remove("is-active");
@@ -52,7 +56,8 @@
 
       var note = form.querySelector(".form-note");
       if (note) {
-        note.textContent = form.getAttribute("data-success-message") ||
+        note.textContent =
+          form.getAttribute("data-success-message") ||
           "Thanks — your message has been received.";
         note.classList.add("is-visible", "is-success");
       }
@@ -60,3 +65,49 @@
     });
   });
 })();
+
+// This code is for google form submission,
+
+const form = document.getElementById("vendorForm");
+
+form.addEventListener("submit", async function (event) {
+  event.preventDefault();
+
+  const submitButton = form.querySelector('button[type="submit"]');
+
+  submitButton.disabled = true;
+  submitButton.textContent = "Submitting...";
+
+  const formData = new FormData(form);
+
+  try {
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbx8O3Pf08iGdehoiIZTAtzGrLtctYE6ZQBuh0_nfBL4gGdeQaaSA0oGUknJeZwTvz3M8Q/exec",
+      {
+        method: "POST",
+        body: formData,
+        mode: "no-cors",
+      },
+    );
+
+    form.reset();
+
+    submitButton.textContent = "Submitted!";
+
+    alert("Thank you! Your vendor application has been submitted.");
+
+    setTimeout(() => {
+      submitButton.disabled = false;
+      submitButton.textContent = "Submit application";
+    }, 3000);
+  } catch (error) {
+    console.error(error);
+
+    alert(
+      "Something went wrong while submitting the application. Please try again.",
+    );
+
+    submitButton.disabled = false;
+    submitButton.textContent = "Submit application";
+  }
+});
